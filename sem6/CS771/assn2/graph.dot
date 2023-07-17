@@ -1,0 +1,23 @@
+digraph{
+    n0 [label="abbey\nable\nabout\nabroad\nabsorb\naccord\naged\nquery:able"]
+    n1 [label="mask:_ _ _ _\nable\naged\nquery:able"]
+    n2 [label="mask:_ _ _ _ _\nabbey\nabout\nquery:abbey"]
+    n3 [label="mask:_ _ _ _ _ _\nabsorb\nabroad\naccord\nquery:accord"]
+    n4 [label="mask:a b l e\nsecret:able"]
+    n5 [label="mask:a _ _ _\naged\nsecret:aged"]
+    n6 [label="mask:a b b e y\nsecret:abbey"]
+    n7 [label="mask:a b _ _ _\nabout\nsecret:about"]
+    n8 [label="mask:a _ _ o r _\nabsorb\nsecret:absorb"]
+    n9 [label="mask:a _ _ o _ _\nabroad\nsecret:abroad"]
+    n10 [label="mask:a c c o r d\nsecret:accord"]
+    n0 -> n1
+    n1 -> n4
+    n1 -> n5
+    n0 -> n2
+    n2 -> n6
+    n2 -> n7
+    n0 -> n3
+    n3 -> n8
+    n3 -> n9
+    n3 -> n10
+}
